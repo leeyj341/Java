@@ -1,0 +1,14 @@
+package chap03;
+//API 사용하기 - 참조형 변수 선언
+public class APITest {
+
+	public static void main(String[] args) {
+		// 1. API에서 제공하는 클래스를 자바 프로그램 안에서 사용하기 위해 메모리에 올리는 작업
+		String str = new String();
+		StringBuffer strBuffer = new StringBuffer();
+		
+		System.out.println(strBuffer);
+
+	}
+
+}

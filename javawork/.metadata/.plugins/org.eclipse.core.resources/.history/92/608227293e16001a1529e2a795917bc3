@@ -1,0 +1,11 @@
+package chap03;
+
+public class APITest {
+
+	public static void main(String[] args) {
+		String str = new String("Å×½ºÆ®");
+		System.out.println(str);
+
+	}
+
+}
