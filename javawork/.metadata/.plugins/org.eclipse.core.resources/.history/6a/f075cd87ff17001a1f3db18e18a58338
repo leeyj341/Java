@@ -1,0 +1,14 @@
+package chap05;
+
+import java.util.Random;
+
+// 참조형 데이터 배열 만들기
+public class ArrayTest02 {
+
+	public static void main(String[] args) {
+		String[] str = new String[3];
+		Random[] randArr = new Random[5];
+
+	}
+
+}

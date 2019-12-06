@@ -1,0 +1,13 @@
+package chap04;
+
+public class ForExam01 {
+
+	public static void main(String[] args) {
+		for(int i = 65; i < 91; i++)
+		{
+			System.out.println((String)i);
+		}
+
+	}
+
+}
