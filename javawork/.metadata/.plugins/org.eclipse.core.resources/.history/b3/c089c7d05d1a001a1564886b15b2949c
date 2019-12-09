@@ -11,8 +11,7 @@ public class LocalVariableTest {
 		if(num >= 90)
 		{
 			String str = new String("합격");
-			//sum = sum + 100; // sum 변수는 main메서드 블럭에서 선언된 지역변수이므로
-							 // 초기화 작업을 하지 않고 사용할 수 없다.
+			sum = 0;
 		}
 		//System.out.println(str); // str변수는 if블럭에서 선언되었으므로
 								 // if블럭 밖에서는 접근할 수 없다.
