@@ -1,0 +1,15 @@
+package chap03;
+
+public class LocalVariableTest {
+
+	public static void main(String[] args) {
+		int num = 90;
+		if(num >= 90)
+		{
+			String str = new String("합격");
+		}
+		System.out.println(str); // str변수는 if블럭에서 선언되었으므로
+								 // if블럭 밖에서는 접근할 수 없다.
+	}
+
+}
