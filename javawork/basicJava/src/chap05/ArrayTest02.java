@@ -24,6 +24,16 @@ public class ArrayTest02 {
 		arr[1] = new String("JDBC");
 		arr[2] = new String("HTML5");
 		System.out.println(arr[0]);	//java
+		
+		//randArr의 초기화
+		randArr[0] = new Random();
+		randArr[1] = new Random();
+		
+		for(int i = 0; i < randArr.length; i++)
+		{
+			System.out.println(randArr[i]);
+		}
+		
 	}
 
 }
