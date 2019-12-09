@@ -1,0 +1,25 @@
+package chap05;
+// 2차원 배열 작성 연습
+public class Array2DTest {
+
+	public static void main(String[] args) {
+		// 2차원 배열의 선언과 생성
+		int[][] myArr = new int[2][3];
+		
+		// 2차원 배열의 초기화
+		myArr[0][0] = 100;
+		myArr[1][1] = 200;
+		
+		System.out.println("myArr의 2번째 요소가 참조하는 배열의 0번 요소의 값 : " + myArr[1][0]);
+		
+		for(int i = 0 ; i < myArr.length; i++)
+		{
+			for(int j = 0; j < myArr[0].length; j++)
+			{
+				System.out.println(myArr[i][j]);
+			}
+		}
+
+	}
+
+}
