@@ -1,0 +1,26 @@
+package chap05;
+
+import java.util.Scanner;
+
+public class Array2DPractice01 {
+
+	public static void main(String[] args) {
+		final int SIZE = 10;
+		int x = 0, y = 0, bingoNum = 0;
+		
+		int[][] bingo = new int[SIZE][SIZE];
+		Scanner scanner = new Scanner(System.in);
+		
+		for(int i = 0; i < SIZE * SIZE; i++)
+		{
+			if(i % 5 == 0) 
+			{
+				System.out.println();
+			}
+			bingo[i / 5][i % 5] = i;
+			System.out.print(bingo[i / 5][i % 5] + "\t");
+		}
+
+	}
+
+}
