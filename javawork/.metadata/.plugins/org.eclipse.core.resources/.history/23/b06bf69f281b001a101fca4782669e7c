@@ -17,7 +17,7 @@ public class Account {
 	}
 	
 	public double calculateInterest() {
-		return balance * (interestRate / 100);
+		return balance * interestRate;
 	}
 	public void deposit(int money) {
 		balance += money;
