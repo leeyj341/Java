@@ -47,20 +47,16 @@ public class Student {
 		double avg = getAvg();
 		String grade = "";
 		if(avg >= 90 & avg <= 100) {
-			grade = "A학점";
+			return "A학점";
 		} else if(avg >= 70) {
-			grade = "A학점";
+			return "B학점";
 		} else if(avg >= 50) {
-			grade = "A학점";
+			return "C학점";
 		} else if(avg >= 30) {
-			grade = "A학점";
+			return "D학점";
 		} else {
-			grade = "A학점";
+			return "F학점";
 		}
-		return grade;
-	}
-	public void print() {
-		System.out.println(name + " 평균: " + getAvg() + " 학점: " + getGrade());
-	}
+	}	
 
 }

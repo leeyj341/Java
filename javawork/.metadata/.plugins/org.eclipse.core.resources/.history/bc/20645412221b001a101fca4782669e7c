@@ -58,9 +58,6 @@ public class Student {
 			grade = "A학점";
 		}
 		return grade;
-	}
-	public void print() {
-		System.out.println(name + " 평균: " + getAvg() + " 학점: " + getGrade());
-	}
+	}	
 
 }

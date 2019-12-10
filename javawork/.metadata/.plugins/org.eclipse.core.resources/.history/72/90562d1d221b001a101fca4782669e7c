@@ -27,7 +27,7 @@ public class Test06 {
 		students[2].setScience(40);
 		
 		for(int i = 0; i < students.length; i++) {
-			students[i].print();
+			System.out.println(students[i].getName() + " Æò±Õ: " + students[i].getAvg() + " ÇĞÁ¡: " + students[i].getGrade());
 		}
 
 	}
