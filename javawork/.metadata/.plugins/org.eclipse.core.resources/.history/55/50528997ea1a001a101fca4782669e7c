@@ -1,0 +1,7 @@
+package oop.chap06;
+// 클래스를 정의하고 멤버변수를 정의하는 방법
+public class Person {
+	String name;		// 클래스의 특성을 나타내는 데이터 - 멤버변수 or 필드
+	String address;		// 클래스 변수(static)과 인스턴스 변수는 초기화가 필요없음
+	int age;
+}

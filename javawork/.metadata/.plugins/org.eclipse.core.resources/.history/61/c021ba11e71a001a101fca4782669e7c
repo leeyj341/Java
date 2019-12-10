@@ -1,0 +1,7 @@
+package oop.chap06;
+
+public class Person {
+	String name;
+	String address;
+	int age;
+}

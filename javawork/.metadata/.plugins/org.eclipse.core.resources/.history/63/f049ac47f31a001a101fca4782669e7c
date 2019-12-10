@@ -1,0 +1,11 @@
+package test.exam;
+
+import oop.chap06.Person;
+
+public class PublicTest {
+
+	public static void main(String[] args) {
+		Person p1 = new Person();
+	}
+
+}

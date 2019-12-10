@@ -45,17 +45,17 @@ public class Array2DBingo {
 			System.out.println();
 			
 			System.out.print("숫자를 입력하세요: ");
-			bingoNum = scanner.nextInt();
+			int num = scanner.nextInt();
 			
 			for(int i = 0; i < SIZE * SIZE; i++)
 			{
-				if(bingo[i / 5][i % 5] == bingoNum)
+				if(bingo[i / 5][i % 5] == num)
 				{
 					bingo[i / 5][i % 5] = 0;
 					break;
 				}
 			}
-		} while(bingoNum != 0);
+		} while(bingoNum < 5);
 
 	}
 
