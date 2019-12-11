@@ -1,7 +1,6 @@
 package oop.chap06.constructor;
 
 import java.io.File;
-import java.io.FileInputStream;
 
 // API의 클래스에 정의된 생성자메서드 확인하기
 public class APIConstructorTest {
@@ -22,12 +21,6 @@ public class APIConstructorTest {
 		
 		File f = new File("test.txt");
 		System.out.println(f.getName());
-		
-		FileInputStream fs = new FileInputStream("test.txt");
-		while(fs.available() > 0)
-		{
-			System.out.print((char)fs.read());	
-		}
 	}
 
 }

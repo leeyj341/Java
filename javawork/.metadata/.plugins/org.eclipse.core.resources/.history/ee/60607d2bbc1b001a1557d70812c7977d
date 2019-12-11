@@ -22,12 +22,8 @@ public class APIConstructorTest {
 		
 		File f = new File("test.txt");
 		System.out.println(f.getName());
-		
 		FileInputStream fs = new FileInputStream("test.txt");
-		while(fs.available() > 0)
-		{
-			System.out.print((char)fs.read());	
-		}
+		System.out.println(fs.read());
 	}
 
 }
