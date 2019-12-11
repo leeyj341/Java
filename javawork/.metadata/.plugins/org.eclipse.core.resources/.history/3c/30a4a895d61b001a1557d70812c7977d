@@ -17,15 +17,6 @@ public class Student {
 		this.english = english;
 		this.math = math;
 		this.science = science;
-	}	
-	public Student(String name, int age, int korean, int english, int math, int science) {
-		super();			// 상속에서 설명
-		this.name = name;
-		this.age = age;
-		this.korean = korean;
-		this.english = english;
-		this.math = math;
-		this.science = science;
 	}
 	
 	public String getName() {

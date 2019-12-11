@@ -1,0 +1,15 @@
+package oop.chap07;
+// static 메서드
+// - static 멤버를 제어하기 위한 용도
+// - 유틸리티처럼 자주 사용하는 메서드
+public class StaticMethodDemo {
+		public static void staticTest1() {
+			System.out.println("staticTest1()");
+		}
+		public void display() {
+			System.out.println("display()");
+		}
+		public static void staticTest2() {
+			System.out.println("staticTest2");
+		}
+}

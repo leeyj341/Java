@@ -1,0 +1,7 @@
+package oop.chap07;
+// static 메서드
+// - static 멤버를 제어하기 위한 용도
+// - 유틸리티처럼 자주 사용하는 메서드
+public class StaticMethodDemo {
+	
+}

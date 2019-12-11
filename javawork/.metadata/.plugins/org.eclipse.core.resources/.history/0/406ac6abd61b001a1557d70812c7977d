@@ -19,7 +19,7 @@ public class Student {
 		this.science = science;
 	}	
 	public Student(String name, int age, int korean, int english, int math, int science) {
-		super();			// 상속에서 설명
+		super();
 		this.name = name;
 		this.age = age;
 		this.korean = korean;
