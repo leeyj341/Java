@@ -1,0 +1,10 @@
+package oop.chap06.constructor;
+// API의 클래스에 정의된 생성자메서드 확인하기
+public class APIConstructorTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -2,15 +2,21 @@ package workbook;
 
 public class Account {
 	private String account;
-	private int balance;
+	private int balance;			//책에는 int지만 보통 돈을 담는 변수는 long으로 선언한다
 	private double interestRate;
 	
 
 	public void setAccount(String account) {
 		this.account = account;
 	}
+	public String getAccount() {
+		return account;
+	}
 	public void setBalance(int balance) {
 		this.balance = balance;
+	}
+	public int getBalace() {
+		return balance;
 	}
 	public void setInterestRate(double interestRate) {
 		this.interestRate = interestRate;
@@ -28,6 +34,6 @@ public class Account {
 	}
 	public void print()
 	{
-		System.out.println("계좌정보: " + account + "현재잔액: " + balance);
+		System.out.println("계좌정보: " + account + " 현재잔액: " + balance);
 	}
 }
