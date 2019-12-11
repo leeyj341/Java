@@ -1,0 +1,12 @@
+package workbook;
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		Company company = new Company(Double.parseDouble(args[0]));
+		
+		company
+
+	}
+
+}

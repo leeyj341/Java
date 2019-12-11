@@ -1,0 +1,12 @@
+package workbook;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		Student01 students = new Student01[3];
+		
+		for
+
+	}
+
+}

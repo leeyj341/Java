@@ -1,0 +1,29 @@
+package workbook;
+
+public class Company {
+	private double salary;
+	private double annualIncome;
+	private double afterTaxAnnualIncome;
+	private double bonus;
+	private double afterTaxBonus;
+	
+	public Company() {
+		
+	}
+	public Company(double salary) {
+		bonus = salary * 0.2;
+	}
+	
+	public double getIncome() {
+		annualIncome = salary * 12;
+		return annualIncome;
+	}
+	public double getAfterTaxIncome() {
+		afterTaxAnnualIncome = annualIncome - annualIncome * 0.1;
+		return afterTaxAnnualIncome;
+	}
+	public double getBonus() {
+		return bonus * 12;
+	}
+	
+}
