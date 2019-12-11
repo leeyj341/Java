@@ -14,6 +14,15 @@ public class Person {
 	private String address;		// 클래스 변수(static)과 인스턴스 변수는 초기화가 필요없음
 	private int age;
 	
+	public Person() {
+		
+	}
+	public Person(String name, String address, int age) {
+		this.name = name;
+		this.address = address;
+		this.age = age;
+	}
+	
 	// 모든 멤버변수는 private로 선언되어 있기 때문에 값을 설정하는 메서드와
 	// 값을 가져올 수 있는 메서드가 필요하다.
 	// 이런 역할을 하는 메서드를 정의하는 경우

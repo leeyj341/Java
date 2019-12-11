@@ -5,6 +5,15 @@ public class Account {
 	private int balance;			//책에는 int지만 보통 돈을 담는 변수는 long으로 선언한다
 	private double interestRate;
 	
+	public Account() {
+		
+	}
+	public Account(String account, int balance, double interestRate)
+	{
+		this.account = account;
+		this.balance = balance;
+		this.interestRate = interestRate;
+	}
 
 	public void setAccount(String account) {
 		this.account = account;

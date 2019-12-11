@@ -1,0 +1,95 @@
+package oop.chap06.constructor;
+
+public class MyConstructor {
+	private String name;
+	private String id;
+	private String pass;
+	private String nickName;
+	private String addr;
+	private int point;
+	
+	public MyConstructor() {
+		System.out.println("기본 생성자");
+	}
+	// 로그인 용
+	public MyConstructor(String name, String id, String pass) {
+		System.out.println("매개변수가 3개 있는 생성자");
+		// 멤버변수(인스턴스 변수, 객체 변수)를 초기화
+		this.name = name;
+		this.id = id;
+		this.pass = pass;
+	}
+	// 수정용
+	public MyConstructor(String name, String id, String pass, String nickName) {
+		this(name, id, pass);
+		this.nickName = nickName;
+		System.out.println("매개변수가 4개 있는 생성자");
+	}
+	// 조회용
+	public MyConstructor(String name, String id, String pass, String nickName, String addr) {
+		System.out.println("매개변수가 5개 있는 생성자");
+		this.name = name;
+		this.id = id;
+		this.pass = pass;
+		this.nickName = nickName;
+		this.addr = addr;
+	}
+	// 삽입용
+	public MyConstructor(String name, String id, String pass, String nickName, String addr, int point) {
+		System.out.println("매개변수가 6개 있는 생성자");
+		this.name = name;
+		this.id = id;
+		this.pass = pass;
+		this.nickName = nickName;
+		this.addr = addr;
+		this.point = point;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
+	public String getNickName() {
+		return nickName;
+	}
+
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+
+	public String getAddr() {
+		return addr;
+	}
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
+	}
+}

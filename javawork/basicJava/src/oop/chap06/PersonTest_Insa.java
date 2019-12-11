@@ -22,7 +22,7 @@ public class PersonTest_Insa {
 				String addr = scanner.next();
 				System.out.print("나이 : ");
 				int age = scanner.nextInt();
-				Person p = new Person();
+				Person p = new Person(name, addr, age);
 				/*p.name = name;	// Person 객체의 name 변수 = 사용자가 입력한 name 값
 				p.address = addr;
 				p.age = age;

@@ -7,7 +7,6 @@ public class Student {
 	private int math;
 	private int science;
 	
-	
 	public String getName() {
 		return name;
 	}
@@ -49,13 +48,13 @@ public class Student {
 		if(avg >= 90 & avg <= 100) {
 			grade = "A학점";
 		} else if(avg >= 70) {
-			grade = "A학점";
+			grade = "B학점";
 		} else if(avg >= 50) {
-			grade = "A학점";
+			grade = "C학점";
 		} else if(avg >= 30) {
-			grade = "A학점";
+			grade = "D학점";
 		} else {
-			grade = "A학점";
+			grade = "F학점";
 		}
 		return grade;
 	}
