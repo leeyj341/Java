@@ -1,0 +1,19 @@
+package oop.chap07;
+/*
+ * <상속관계에서 멤버변수가 갖는 특징>
+ * 
+*/
+class Super {
+	
+}
+class Sub extends Super {
+	
+}
+public class InheritanceTest01 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

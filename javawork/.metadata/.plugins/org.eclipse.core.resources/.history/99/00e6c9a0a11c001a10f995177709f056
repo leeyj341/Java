@@ -1,0 +1,5 @@
+package oop.chap07;
+
+public class CheckingAccount extends Account {
+
+}

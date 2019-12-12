@@ -1,0 +1,10 @@
+package oop.chap07;
+
+public class Person {
+	String name;
+	int age;
+	
+	public Person() {
+		
+	}
+}

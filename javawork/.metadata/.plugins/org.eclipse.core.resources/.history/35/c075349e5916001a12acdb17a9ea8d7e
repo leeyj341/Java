@@ -1,8 +1,0 @@
-package chap03;
-// 기본형과 참조형 변수의 비교
-public class VariableTest {
-	public static void main(String[] args) {
-		
-	}
-
-}

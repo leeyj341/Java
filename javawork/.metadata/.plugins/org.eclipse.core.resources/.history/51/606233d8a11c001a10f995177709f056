@@ -1,0 +1,12 @@
+package oop.chap07;
+
+public class CheckingAccount extends Account {
+	private String cardNo;
+	
+	public CheckingAccount() {
+		
+	}
+	public CheckingAccount(String cardNo) {
+		this.cardNo = cardNo;
+	}
+}

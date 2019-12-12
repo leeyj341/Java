@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="oop.chap06.constructor.MyConstructor"/>
+<fullyQualifiedTypeName name="oop.chap06.MethodCallExam"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="oop.chap06.CallByTest"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="oop.chap07.뱀after"/>
+<fullyQualifiedTypeName name="oop.chap07.Staff"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="oop.chap07.SubB"/>
+<fullyQualifiedTypeName name="java.lang.CloneNotSupportedException"/>
 </qualifiedTypeNameHistroy>

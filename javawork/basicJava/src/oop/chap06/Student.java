@@ -12,6 +12,7 @@ public class Student {
 		
 	}
 	public Student(String name, int korean, int english, int math, int science) {
+		super();
 		this.name = name;
 		this.korean = korean;
 		this.english = english;
