@@ -10,6 +10,7 @@ public class TestAccount {
 		System.out.println("카드번호입력: ");
 		Scanner key = new Scanner(System.in);
 		String cardNo = key.next();
+		key.close();
 		
 		acc1.pay(500000, "1234-5678-8888");
 		System.out.println("현재잔액====>"+acc1.getBalance());
