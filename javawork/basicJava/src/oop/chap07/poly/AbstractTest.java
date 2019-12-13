@@ -26,6 +26,7 @@ package oop.chap07.poly;
  *    - 상위클래스로 사용하기 위한 목적(객체생성을 문법으로 제한하기 위해)
  *    - 하위클래스에서 반드시 재정의해야하는 메서드를 문법으로 정의하여 반드시 재정의하도록 하기 위해서
  *    
+ *    
 */
 abstract class AbstractSuper {
 	public abstract void show();
@@ -45,7 +46,7 @@ class AbstractSub extends AbstractSuper {
 public class AbstractTest {
 
 	public static void main(String[] args) {
-		//AbstractSuper obj = new AbstractSuper();
+		AbstractSuper obj = new AbstractSub();
 
 	}
 
