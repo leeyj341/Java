@@ -1,5 +1,6 @@
 package chap08;
-
+// 예외가 발생하거나 발생하지 않거나 반드시 실행할 명령문이 있는 경우???
+// finally블럭을 추가하고 정의한다.
 import java.util.Scanner;
 
 public class ExceptionTest04 {
@@ -21,6 +22,9 @@ public class ExceptionTest04 {
 			System.out.println("널입니다.");
 		} catch (Exception e) {
 			System.out.println("오류발생!");
+		} finally {
+			// 예외가 발생하든 안하든 실행해야 하는 명령
+			System.out.println("반드시 실행할 명령문 - 무조건 실행");
 		}
 
 	}
