@@ -36,7 +36,4 @@ public class Circle extends Shape implements Movable {
 	public String printInfo() {
 		return "Circle:\t" + radius + "\t" + point.x + "\t" + point.y;
 	}
-	
-	
-
 }

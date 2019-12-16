@@ -11,7 +11,7 @@ public class ShapeTest {
 
 		print(shape);
 		
-		System.out.println("After Move ...........");
+		System.out.println("After Move ...........................");
 		for (Shape obj : shape) {
 			if(obj instanceof Rectangle) {
 				((Rectangle)obj).move(10, 10);
