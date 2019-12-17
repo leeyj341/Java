@@ -12,7 +12,7 @@ public class AccountTest {
 		try {
 			account.deposit(-10);
 		} catch (Exception e) {
-			System.out.println("입금 금액이 0보다 적습니다.");
+			System.out.println(e.getMessage());
 		}
 		
 		try {

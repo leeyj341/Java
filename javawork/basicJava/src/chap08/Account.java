@@ -36,7 +36,7 @@ public class Account {
 	}
 	public void deposit(int money) throws Exception {
 		if(money < 0) {
-			throw new Exception();
+			throw new Exception("입금 금액이 0보다 적습니다.");
 		}
 		balance += money;
 	}
