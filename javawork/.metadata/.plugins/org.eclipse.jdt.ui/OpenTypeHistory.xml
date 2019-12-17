@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=basicJava/src&lt;oop.chap07.poly{Shape.java[Shape" modifiers="1025" timestamp="1576463854099"/>
+<typeInfo handle="=basicJava/src&lt;oop.chap07.poly{Resize.java[Resize" modifiers="513" timestamp="1576463380127"/>
+<typeInfo handle="=basicJava/C:\/Program Files\/Java\/jdk1.8.0_221\/jre\/lib\/rt.jar&lt;javax.swing(JTable$Resizable2.class[Resizable2" modifiers="1546" timestamp="1575251181813"/>
+<typeInfo handle="=basicJava/src&lt;oop.chap07.poly{Car.java[Car" modifiers="1025" timestamp="1576476644950"/>
+<typeInfo handle="=basicJava/src&lt;oop.chap07.poly{Temp.java[Temp" modifiers="513" timestamp="1576474440000"/>
+<typeInfo handle="=basicJava/src&lt;workbook{Shape.java[Shape" modifiers="1025" timestamp="1576477175331"/>
+<typeInfo handle="=basicJava/src&lt;workbook{Movable.java[Movable" modifiers="513" timestamp="1576476793120"/>
+</typeInfoHistroy>
