@@ -1,7 +1,8 @@
 package chap09.api.lang;
 //String클래스의 기본 메서드와 String클래스의 특징
+//=> 문자열처리 메서드를 자주 호출하거나 +연산자로 문자열을 연결하는 작업이 많은 경우
+//   String을 사용하지 않고 StringBuffer or StringBuilder를 이용한다.
 public class StringTest03 {
-
 	public static void main(String[] args) {
 		String str1 = new String("java programming");
 		String str2 = new String("재밌다.");
