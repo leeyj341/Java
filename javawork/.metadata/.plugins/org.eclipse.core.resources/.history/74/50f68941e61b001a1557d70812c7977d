@@ -1,9 +1,0 @@
-package oop.chap06;
-// 메서드의 매개변수로 기본형과 참조형을 정의하는 경우 차이점
-public class CallByTest {
-	public static void main(String[] args) {
-		
-
-	}
-
-}

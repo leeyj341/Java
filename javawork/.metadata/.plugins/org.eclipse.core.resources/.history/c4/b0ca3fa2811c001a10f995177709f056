@@ -1,7 +1,0 @@
-package oop.chap07;
-
-public class Staff {
-	private String name;
-	private int age;
-	private String dept;
-}

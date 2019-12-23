@@ -1,7 +1,0 @@
-package oop.chap06;
-
-public class Person {
-	String name;	// 클래스의 특성을 나타내는 데이터 - 멤버변수 or 필드
-	String address;
-	int age;
-}

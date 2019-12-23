@@ -1,7 +1,0 @@
-package oop.chap06.constructor;
-
-public class MyConstructor {
-	public static void main(String[] args) {
-		
-	}
-}
