@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="after" key="selection"/>
+		<item value="System.out.print(&quot;아이디 : &quot;);" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="System.out.print(&quot;아이디 : &quot;);"/>
 			<item value="before"/>
 			<item value="account.setAccount(&quot;441-0290-1203&quot;);"/>
 			<item value="p1.setName(&quot;장동건&quot;);"/>
@@ -19,8 +20,6 @@
 			<item value="for(int i = 0; i &lt; 3; i++) {"/>
 			<item value="매개변수가 없고"/>
 			<item value="p2"/>
-			<item value="do {"/>
-			<item value="/*for(int i = 2; i &lt;= 9; i++)"/>
 		</list>
 		<list key="replacehistory">
 			<item value="after"/>

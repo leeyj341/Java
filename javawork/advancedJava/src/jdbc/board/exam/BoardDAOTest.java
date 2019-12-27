@@ -1,10 +1,11 @@
 package jdbc.board.exam;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BoardDAOTest {
 	public static void main(String[] args) {
-		BoardDAO dao = new BoardDAO();
+		BoardDAOImpl dao = new BoardDAOImpl();
 		Scanner key = new Scanner(System.in);
 		
 		System.out.println("********* 게시글 등록 *********");
@@ -21,7 +22,15 @@ public class BoardDAOTest {
 		//dao.insert(id, title, content);
 		//dao.update(id, boardNum);
 		//dao.delete(boardNum);
-		dao.select();
+		ArrayList<BoardDTO> list = dao.select();
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i).getBoardNum() + "\t" +
+					list.get(i).getId() + "\t" +
+					list.get(i).getTitle() + "\t" +
+					list.get(i).getContent() + "\t" +
+					list.get(i).getWriteDate() + "\t" +
+					list.get(i).getHit());
+		}
 	}
 
 }

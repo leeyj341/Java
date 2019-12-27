@@ -1,4 +1,4 @@
-package jdbc.board.exam;
+package ncs.exam;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
