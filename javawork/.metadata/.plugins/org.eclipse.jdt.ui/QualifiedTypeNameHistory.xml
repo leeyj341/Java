@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="oop.chap06.constructor.MyConstructor"/>
-<fullyQualifiedTypeName name="oop.chap06.MethodCallExam"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="oop.chap06.CallByTest"/>
 <fullyQualifiedTypeName name="oop.chap07.뱀after"/>
 <fullyQualifiedTypeName name="oop.chap07.Staff"/>
@@ -17,7 +13,6 @@
 <fullyQualifiedTypeName name="oop.chap07.poly.EmailSender"/>
 <fullyQualifiedTypeName name="coffee.Beverage"/>
 <fullyQualifiedTypeName name="workbook.Calculator"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="oop.chap07.poly.GUITest"/>
 <fullyQualifiedTypeName name="oop.chap07.poly.Resize"/>
 <fullyQualifiedTypeName name="oop.chap07.poly.Triangle"/>
@@ -40,17 +35,29 @@
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Timer"/>
-<fullyQualifiedTypeName name="java.sql.Statement"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="jdbc.basic.PreparedUpdateTest"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="jdbc.board.exam.DBUtil"/>
+<fullyQualifiedTypeName name="jdbc.board.exam.BoardDAO"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="jdbc.board.exam.BoardDTO"/>
 <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="jdbc.member.exam.MemberDAO"/>
+<fullyQualifiedTypeName name="jdbc.member.exam.MemberDAOImpl"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="jdbc.board.exam.DBUtil"/>
+<fullyQualifiedTypeName name="jdbc.member.exam.DBUtil"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="jdbc.member.exam.MemberDTO"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="ncs.exam.CustomerDAO"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

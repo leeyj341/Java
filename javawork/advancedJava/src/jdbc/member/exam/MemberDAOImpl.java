@@ -75,27 +75,22 @@ public class MemberDAOImpl implements MemberDAO {
 	}
 
 	@Override
-	public void select() {
+	public ArrayList<MemberDTO> memberList() {
 		Connection con = null;
 		PreparedStatement ptmt = null;
 		ResultSet rs = null;
 		
 		String sql = "select * from member";
-		
+		ArrayList<MemberDTO> arrMember = new ArrayList<MemberDTO>();
+		MemberDTO member = null;
 		try {
 			con = DBUtil.getConnect();
 			ptmt = con.prepareStatement(sql);
 			rs = ptmt.executeQuery();
-			ArrayList<MemberDTO> arrMember = new ArrayList<MemberDTO>();
+			
 			while(rs.next()) {
-				MemberDTO member = new MemberDTO();
-				member.setId(rs.getString("id"));
-				member.setPass(rs.getString("pass"));
-				member.setName(rs.getString("name"));
-				member.setAddr(rs.getString("addr"));
-				member.setDeptno(rs.getString("deptno"));
-				member.setHireDate(rs.getDate("hiredate"));
-				member.setPoint(rs.getInt("point"));
+				member = new MemberDTO(rs.getString("id"), rs.getString("pass"), rs.getString("name"),
+							rs.getString("addr"), rs.getString("deptno"), rs.getDate("hiredate"), rs.getInt("point"));
 				arrMember.add(member);			
 			}
 		} catch (SQLException e) {
@@ -103,5 +98,64 @@ public class MemberDAOImpl implements MemberDAO {
 		} finally {
 			DBUtil.close(rs, ptmt, con);
 		}
+		return arrMember;
+	}
+	
+	@Override
+	public ArrayList<MemberDTO> findByAddr(String addr) {
+		Connection con = null;
+		PreparedStatement ptmt = null;
+		ResultSet rs = null;
+		
+		String sql = "select * from member where addr like ?";
+		StringBuffer sbf = new StringBuffer("%");
+		sbf.append(addr);
+		sbf.append("%");
+		ArrayList<MemberDTO> arrMember = new ArrayList<MemberDTO>();
+		MemberDTO member = null;
+		try {
+			con = DBUtil.getConnect();
+			ptmt = con.prepareStatement(sql);
+			ptmt.setString(1, sbf.toString());
+			rs = ptmt.executeQuery();
+			
+			while(rs.next()) {
+				member = new MemberDTO(rs.getString("id"), rs.getString("pass"), rs.getString("name"),
+							rs.getString("addr"), rs.getString("deptno"), rs.getDate("hiredate"), rs.getInt("point"));
+				arrMember.add(member);			
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(rs, ptmt, con);
+		}
+		return arrMember;
+	}
+	
+	@Override
+	public MemberDTO login(String id, String pass) {
+		Connection con = null;
+		PreparedStatement ptmt = null;
+		ResultSet rs = null;
+		
+		String sql = "select * from member where id = ? and pass = ?";
+		MemberDTO member = null;
+		try {
+			con = DBUtil.getConnect();
+			ptmt = con.prepareStatement(sql);
+			ptmt.setString(1, id);
+			ptmt.setString(2, pass);
+			rs = ptmt.executeQuery();
+			
+			if(rs.next()) {
+				member = new MemberDTO(rs.getString("id"), rs.getString("pass"), rs.getString("name"),
+							rs.getString("addr"), rs.getString("deptno"), rs.getDate("hiredate"), rs.getInt("point"));		
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(rs, ptmt, con);
+		}
+		return member;
 	}
 }

@@ -10,9 +10,11 @@ public class DAOTest {
 		System.out.println("3. 게시글수정");
 		System.out.println("4. 게시글삭제");
 		System.out.println("5. 제목으로 게시글 검색");
+		System.out.println("6. 게시글 상세 보기");
 		System.out.print("원하는 작업을 선택하세요:");
 		int choice  = key.nextInt();
 		show(choice);
+		key.close();
 	}
 	public static void show(int choice){
 		MenuUI ui = new MenuUI();
@@ -30,8 +32,10 @@ public class DAOTest {
 				ui.deleteMenu();
 				break;
 			case 5:
-				ui.searchMenu();
+				ui.searchByTitle();
 				break;
+			case 6:
+				ui.searchByBoardNum();
 		}
 	}
 }
