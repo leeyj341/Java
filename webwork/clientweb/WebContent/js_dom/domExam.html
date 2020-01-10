@@ -3,6 +3,36 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
+<script type="text/javascript">
+	function insertP() {
+		pNode = document.createElement("p");
+		pNode.setAttribute("style", "background: yellow;");
+		pNode.setAttribute("id", "newp");
+		pText = document.createTextNode("newP");
+		pNode.appendChild(pText);
+		
+		rootNode = document.getElementById("root");
+		rootNode.appendChild(pNode);
+	}
+	
+	function deleteP() {
+		rootNode = document.getElementById("root");
+		/* if(rootNode.lastChild.nodeName == "#text") {
+			rootNode.removeChild(rootNode.lastChild);
+		}
+		rootNode.removeChild(rootNode.lastChild); */
+		rootNode.removeChild(rootNode.lastElementChild); // element인 child 중 마지막 거
+	}
+	
+	function deleteDivAndP() {
+		rootNode = document.getElementById("root");
+		childList = rootNode.childNodes;
+		while(childList.length > 0) {
+			//console.log()로 개발자도구 콘솔에서 내용을 확인할 수 있다
+			rootNode.removeChild(rootNode.firstChild);
+		}
+	}
+</script>
 </head>
 <body>
 	<div id="layer"></div>

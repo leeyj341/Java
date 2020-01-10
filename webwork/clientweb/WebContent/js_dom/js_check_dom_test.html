@@ -29,21 +29,31 @@
 			}
 		}
 		//여기에 dom을 적용해보세요	
-	}	
+		text = document.createTextNode(checkVal);
+		resultDiv = document.getElementById("result");
+		//텍스트 노드를 추가하기 전에 기존에 작업한 하위노드가 있는지 확인하고 제거
+		//제거해야 하는 노드가 동적으로 생성된 노드 하나이므로 아래와 같이 작업
+		if(resultDiv.childNodes.length != 0) {
+			resultDiv.removeChild(resultDiv.firstChild);
+		}
+		resultDiv.appendChild(text);
+	}
 
 </script>
 </head>
 <body>
 	<form name="cbfmt">
-		<label>아이스크림</label> <input type="checkbox" name="food" value="아이스크림"
-			id="ice"> <label>커피</label> <input type="checkbox"
-			name="food" value="커피" id="coffee"> <label>음료수</label> <input
-			type="checkbox" name="food" value="음료수" id="beverage"> <label>모두체크/해제</label>
-		<input type="checkbox" name="allchk" id="allchk" onclick="allcheck()">
-
-		<label>배경색변경하기</label> <input type="checkbox" name="bgchk" id="bgchk"
-			onclick="checktest()"><br> <input type="button"
-			value="전송" onclick="ckFunc()">
+		<label>아이스크림</label>
+			<input type="checkbox" name="food" value="아이스크림" id="ice"> 
+		<label>커피</label>
+			<input type="checkbox" name="food" value="커피" id="coffee"> 
+		<label>음료수</label>
+			<input type="checkbox" name="food" value="음료수" id="beverage"> 
+		<label>모두체크/해제</label>
+			<input type="checkbox" name="allchk" id="allchk" onclick="allcheck()">
+		<label>배경색변경하기</label>
+			<input type="checkbox" name="bgchk" id="bgchk" onclick="checktest()"><br>
+			<input type="button" value="전송" onclick="ckFunc()">
 	</form>
 	<div id="result"></div>
 </body>
