@@ -3,34 +3,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<script type="text/javascript">
-	function allCheck() {
-		myCheck = myform.prd;
-		allChk = myform.allchk.checked;
-		for (var i = 0; i < myCheck.length; i++) {
-			myCheck[i].checked = allChk;
-		}
-		calc();
-	}
-	function calc() {
-		myCheck = myform.prd;
-		myCount = myform.count;
-		myPrice = myform.price;
-		myClass = document.getElementsByClassName("calcprice");
-		sum = 0;
-		for (var i = 0; i < myCheck.length; i++) {
-			if(myCheck[i].checked) {
-				myClass[i].innerHTML = myCount[i].value * myPrice[i].value;
-				sum += parseInt(myClass[i].innerHTML);	
-			}
-			else {
-				myCount[i].value = 1;
-				myClass[i].innerHTML = "";
-			}
-		}
-		document.getElementById("totalprice").innerHTML = sum;
-	}
-</script>
+
 </head>
 <body>
 	<form name="myform">
@@ -61,5 +34,32 @@
 			</tr>
 		</table>
 	</form>
+	<script type="text/javascript">
+		mycheck = document.myform.prd;
+		function allCheck() {
+			allChk = myform.allchk.checked;
+			for (var i = 0; i < mycheck.length; i++) {
+				mycheck[i].checked = allChk;
+			}
+			calc();
+		}
+		function calc() {
+			mycheck = myform.prd;
+			myCount = myform.count;
+			myPrice = myform.price;
+			myClass = document.getElementsByClassName("calcprice");
+			sum = 0;
+			for (var i = 0; i < mycheck.length; i++) {
+				if (mycheck[i].checked) {
+					myClass[i].innerHTML = myCount[i].value * myPrice[i].value;
+					sum += parseInt(myClass[i].innerHTML);
+				} else {
+					myCount[i].value = 1;
+					myClass[i].innerHTML = "";
+				}
+			}
+			document.getElementById("totalprice").innerHTML = sum;
+		}
+	</script>		
 </body>
 </html>

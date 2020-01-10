@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		myfunc = function test(num) {
+			if (num > 90) {
+				alert("성공");
+			} else {
+				alert("실패");
+			}
+		}
+		myfunc2 = function(num) { // 익명으로 정의할 수 있다.
+			if (num > 90) {
+				alert("성공");
+			} else {
+				alert("실패");
+			}
+		}
+		//test(90); - 표현식으로 함수명을 정의했기 때문에 함수명을 사용할 수 없고
+		//			    변수명을 이용해야 한다.
+		myfunc(90);
+		myfunc2(100);
+	</script>
+</body>
+</html>
