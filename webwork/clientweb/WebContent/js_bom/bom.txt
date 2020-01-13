@@ -52,14 +52,6 @@ BOM
 	- onmouseover, onmouseout
 	- onchange
 	- onload
-	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
     	
     	
     	

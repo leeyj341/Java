@@ -66,10 +66,34 @@
 	<a href="#" target="_self">하이퍼링크2</a>
 	<a href="#" target="_blank">하이퍼링크3</a>
 	<a href="#" target="_self">하이퍼링크4</a>
-	<script type="text/javascript" src="../common/js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			
+			$("#ultag").on("click", function() {
+				$("ul li:first").css("color","red");
+			})
+			$("#ulAll").on("click", function() {
+				$("ul:first-child").css("color","blue");	// ':'은 가상의 상황을 만들어 사용할 때..
+			})
+			$("#href").on("click", function() {	
+				$("[href]").css("color","skyblue");	// []로 속성명을 표시, href가 정의되어 있는 모든 태그
+			})
+			$("#attrVal").on("click", function() {	
+				//$("[target='_blank']").css("color","yellow");	// []로 속성명을 표시, href가 정의되어 있는 모든 태그
+			})
+			$("#attrVal").on("click", function() {	
+				$("a[target!='_blank']").css("color","pink");	// 태그명은 앞에
+			})
+			$("#inputbutton").on("click", function() {	
+				$(":button").css("color","green");	//type이 버튼인 것만 골라 작업
+			})
+			$("#treven").on("click", function() {	
+				$("tr:even").css("background-color","blue");	
+			})
+			$("#trodd").on("click", function() {	
+				$("tr:odd").css("background-color","yellow");	
+			})
 		});
 	</script>
 </body>
