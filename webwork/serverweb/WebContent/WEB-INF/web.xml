@@ -41,4 +41,28 @@
   	<servlet-name>login</servlet-name>
   	<url-pattern>/login.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>mypost</servlet-name>
+  	<servlet-class>basic.PostFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mypost</servlet-name>
+  	<url-pattern>/mypost.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>calc</servlet-name>
+  	<servlet-class>basic.CalcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>calc</servlet-name>
+  	<url-pattern>/calc.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>multi</servlet-name>
+  	<servlet-class>basic.MultiCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>multi</servlet-name>
+  	<url-pattern>/multi.do</url-pattern>
+  </servlet-mapping>
 </web-app>
