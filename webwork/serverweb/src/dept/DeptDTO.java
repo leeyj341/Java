@@ -47,5 +47,9 @@ public class DeptDTO {
 		this.mgr = mgr;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "DeptDTO [deptNo=" + deptNo + ", deptName=" + deptName + ", loc=" + loc + ", tel=" + tel + ", mgr=" + mgr
+				+ "]";
+	}
 }

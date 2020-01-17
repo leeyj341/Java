@@ -1,4 +1,4 @@
-package dept;
+package basic;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,26 +9,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "delete", urlPatterns = { "/dept/delete.do" })
-public class DeleteServlet extends HttpServlet {
+import dept.DeptDTO;
+
+@WebServlet(name = "redirect", urlPatterns = { "/redirect.do" })
+public class SendRedirectServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("euc-kr");
-		//1. 요청정보 추출
-		String deptNo = request.getParameter("deptno");
-		
 		response.setContentType("text/html;charset=euc-kr");
 		PrintWriter pw = response.getWriter();
+		pw.println("<h1>sendRedirect화면</h1>");
 		
-		//2. 비지니스 메서드 호출
-		DeptDAO dao = new DeptDAO();
-		int result = dao.delete(deptNo);
+		//1. 데이터 공유하기
+		DeptDTO dto = new DeptDTO("001", "전산실", "", "", "");
+		request.setAttribute("mydata", dto);
+		System.out.println("SendRedirectServlet실행완료");
 		
-		/*pw.print("<h1>삭제 성공</h1><hr/>");
-		pw.print("<h4>" + result + "개 삭제</h4>");
-		pw.print("<a href='/serverweb/dept/list.do'>목록 보기</a>");*/
-		
-		//3. 요청재지정
-		response.sendRedirect("/serverweb/list.do");
+		//2. 요청 재지정 - sendRedirect
+		response.sendRedirect("/serverweb/jspbasic/subPage.jsp");
 	}
-
 }

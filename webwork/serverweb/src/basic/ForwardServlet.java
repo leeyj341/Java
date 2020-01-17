@@ -1,7 +1,7 @@
-package dept;
+package basic;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,19 +10,23 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "list", urlPatterns = { "/list.do" })
-public class ListServlet extends HttpServlet {
+import dept.DeptDTO;
+
+@WebServlet(name = "forward", urlPatterns = { "/forward.do" })
+public class ForwardServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("euc-kr");
 		response.setContentType("text/html;charset=euc-kr");
+		PrintWriter pw = response.getWriter();
+		pw.println("<h1>forward화면</h1>");
 		
-		DeptDAO dao = new DeptDAO();
-		ArrayList<DeptDTO> list = dao.getDeptList();
+		//1. 데이터 공유하기
+		DeptDTO dto = new DeptDTO("001", "전산실", "", "", "");
+		request.setAttribute("mydata", dto);
+		System.out.println("ForwardServlet실행완료");
 		
-		request.setAttribute("arrList", list);
-		
-		RequestDispatcher rd = request.getRequestDispatcher("/dept/list.jsp");
+		//2. 요청 재지정 - forward
+		RequestDispatcher rd = request.getRequestDispatcher("/jspbasic/subPage.jsp");
 		rd.forward(request, response);
 	}
-
 }
