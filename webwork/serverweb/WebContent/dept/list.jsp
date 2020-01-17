@@ -28,7 +28,7 @@
 			<td style='border: solid 1px'><%= deptDTO.getLoc() %></td>
 			<td style='border: solid 1px'><%= deptDTO.getTel() %></td>
 			<td style='border: solid 1px'><%= deptDTO.getMgr() %></td>
-			<td style='border: solid 1px'><a href='/serverweb/dept/delete.do?deptno="<%= deptDTO.getDeptNo() %>"&info=test'>삭제</a></td>
+			<td style='border: solid 1px'><a href="/serverweb/dept/delete.do?deptno=<%= deptDTO.getDeptNo()%>&info=test">삭제</a></td>
 		</tr>
 		<%
 			}
