@@ -19,12 +19,13 @@
 			<th style='border: solid 1px'>기타</th>
 		</tr>
 		<%
+			//서블릿이 공유해준 ArrayList<DeptDTO>객체 가져오기
 			ArrayList<DeptDTO> list = (ArrayList<DeptDTO>)request.getAttribute("arrList");
 			for (DeptDTO deptDTO : list) {
 		%>
 		<tr>
 			<td style='border: solid 1px'><%= deptDTO.getDeptNo() %></td>
-			<td style='border: solid 1px'><%= deptDTO.getDeptName() %></td>
+			<td style='border: solid 1px'><a href="/serverweb/dept/read.do?deptno=<%= deptDTO.getDeptNo()%>&Info=한글데이터"><%= deptDTO.getDeptName() %></a></td>
 			<td style='border: solid 1px'><%= deptDTO.getLoc() %></td>
 			<td style='border: solid 1px'><%= deptDTO.getTel() %></td>
 			<td style='border: solid 1px'><%= deptDTO.getMgr() %></td>

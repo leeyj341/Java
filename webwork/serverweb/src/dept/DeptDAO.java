@@ -9,6 +9,35 @@ import java.util.ArrayList;
 import fw.DBUtil;
 
 public class DeptDAO {
+	//read
+	public DeptDTO read(String deptNo) {
+		Connection con = null;
+		PreparedStatement ptmt = null;
+		String sql = "select * from mydept where deptno = ?";
+		DeptDTO dto = null;
+		ResultSet rs = null;
+		
+		try {
+			con = DBUtil.getConnect();
+			ptmt = con.prepareStatement(sql);
+			ptmt.setString(1, deptNo);
+			rs = ptmt.executeQuery();
+			if(rs.next()) {
+				dto = new DeptDTO(rs.getString(1),
+						rs.getString(2),
+						rs.getString(3), 
+						rs.getString(4), 
+						rs.getString(5));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(rs, ptmt, con);
+		}
+		
+		return dto;
+	}
+	
 	//ªË¡¶
 	public int delete(String deptNo) {
 		Connection con = null;
