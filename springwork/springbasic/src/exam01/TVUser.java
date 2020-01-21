@@ -7,6 +7,7 @@ public class TVUser {
 		Scanner scan = new Scanner(System.in);
 		TV tv = null;
 		String brand = scan.next();
+		scan.close();
 		if(brand.equals("samsung")) {
 			tv = new SamsungTV();
 		} else if(brand.equals("lg")) {
