@@ -1,6 +1,9 @@
 package di.constructor01;
 
-public abstract class AbstractPlayer {
-	public abstract void play();
-	public abstract int getTotalValue();
+public interface AbstractPlayer {
+
+	void play();
+
+	int getTotalValue();
+
 }
