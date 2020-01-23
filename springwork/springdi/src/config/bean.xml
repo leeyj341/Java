@@ -3,8 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="tv" class="dl.exam01.LgTV"/>
-<!-- 	<bean id="lg" class="dl.exam01.LgTV"/> -->
+<!-- 	<bean id="samsung" class="book.exam.SamsungTV"> -->
+<!-- 		<constructor-arg ref="speaker" /> -->
+<!-- 	</bean> -->
+	<bean id="tv" class="book.exam.constructor.LgTV">
+		<constructor-arg ref="speaker"/>
+	</bean>
 
 	<bean id="mydao" class="di.constructor.basic.MemberDAO"/>
 	<bean id="insa" class="di.constructor.basic.InsaImpl">
@@ -16,4 +20,23 @@
 		<constructor-arg ref="dice" />
 	</bean>
 
+	<bean id="logic" class="di.constructor02.LogicImpl"/>
+	<bean id="service" class="di.constructor02.ServiceImpl">
+		<constructor-arg ref="logic"/>
+		<constructor-arg value="이민호"/>
+		<constructor-arg value="안녕"/>
+<!-- 		<constructor-arg value="안녕"> -->
+<!-- 			<value>안녕</value> -->
+<!-- 		</constructor-arg> -->
+	</bean>
+	
+	<bean id="speaker" class="book.exam.constructor.AppleSpeaker"/>
+
+	<bean id="dao" class="di.constructor03.OracleArticleDAO"/>
+	<bean id="mgr" class="di.constructor03.WriteArticleMgr">
+		<constructor-arg ref="dao"/>
+<!-- 		<constructor-arg> -->
+<!-- 		<ref bean="dao"/> -->
+<!-- 		</constructor-arg> -->
+	</bean>
 </beans>
