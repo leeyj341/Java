@@ -27,7 +27,9 @@ public class FrontServlet extends HttpServlet {
 		//RequestMapping객체에 의뢰(뭘 실행해야 하는지) => RequestMapping객체의 메서드를 호출하면 실제 실행할 객체를 찾아서 리턴
 		RequestMapping mappingObj = new RequestMapping();
 		Action action = mappingObj.mapping(path);
-				
+		
+		//한글 인코딩
+		
 		//Action객체의 메서드를 호출
 		action.run(request, response);
 		

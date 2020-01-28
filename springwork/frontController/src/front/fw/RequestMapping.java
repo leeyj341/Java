@@ -2,6 +2,7 @@ package front.fw;
 
 import java.util.HashMap;
 
+import member.LoginAction;
 import member.MemberInsert;
 import product.ProductList;
 
@@ -18,17 +19,21 @@ public class RequestMapping {
 	
 	public RequestMapping() {
 		//생성자 내부에서 설정파일을 파싱해서 객체로 만드는 코드가 정의되어야 한다.
-		
 	}
 
 	public Action mapping(String path) {
 		//매개변수로 전달된 path로 등록된 Action객체를 actionMap에서 찾아서 리턴
 		//하는 코드가 정의되어야 하나... 일단 if...else로 처리
+		//현재 코드는 연습용이므로 추가가 되면 mapping메서드를 변경해야 하지만 
+		//실제는 xml문서나 properties파일을 분석해서 자동으로 만들도록 코드를 
+		//정의할 것이므로 코드 변경을 하지 않아도 된다.
 		Action action = null;
 		if(path.equals("/product/list.do")) {
 			action = new ProductList();
 		} else if(path.equals("/member/customer/insert.do")) {
 			action = new MemberInsert();
+		} else if(path.equals("/login.do")) {
+			action = new LoginAction();
 		}
 		//.......
 		return action;
