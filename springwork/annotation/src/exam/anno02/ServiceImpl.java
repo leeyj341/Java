@@ -1,10 +1,18 @@
 package exam.anno02;
 
-public class ServiceImpl implements Service {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("service")
+public class ServiceImpl implements IService {
+	@Autowired
 	Logic mylogic;
 	String name;
 	String msg;
 	
+	public ServiceImpl() {
+		
+	}
 	public ServiceImpl(Logic mylogic, String name, String msg) {
 		super();
 		this.mylogic = mylogic;

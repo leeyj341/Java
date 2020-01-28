@@ -1,4 +1,4 @@
-package book.exam.constructor;
+package book.exam.setter;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
