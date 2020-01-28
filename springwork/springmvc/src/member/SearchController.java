@@ -13,7 +13,7 @@ public class SearchController implements Controller {
 		String search = request.getParameter("search");
 		System.out.println("°Ë»ö¾î : " + search);
 		
-		return new ModelAndView("test/index");
+		return new ModelAndView("/WEB-INF/test/index.jsp");
 	}
 	
 }
