@@ -19,31 +19,11 @@
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/" />
 		<beans:property name="suffix" value=".jsp" />
-		<beans:property name="order" value="2"></beans:property>
 	</beans:bean>
 	
-	<!-- tiles 설정 파일을 읽어서 등록한 대로 뷰를 만들어 낼 수 있도록 등록 -->
-	<!-- 1. tiles 설정 파일을 읽어올 수 있도록 설정 파일을 등록 -->
-	<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-		<beans:property name="definitions">
-			<beans:list>
-				<beans:value>/WEB-INF/config/main-tiles.xml</beans:value>
-			</beans:list>
-		</beans:property>
-	</beans:bean>
-	<!-- 2. tiles프레임워크 기반으로 뷰를 만들 수 있도록 ViewResolver 등록 -->
-	<beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"></beans:property>
-		<beans:property name="order" value="1"></beans:property>
-	</beans:bean>
-	
-	<!-- 어노테이션을 하기 위해 빈을 찾을 패키지 등록 -->
-	<context:component-scan base-package="sts.multi.firstPro" />
-	<context:component-scan base-package="member"></context:component-scan>
-	<context:component-scan base-package="test"></context:component-scan>
-	<context:component-scan base-package="exam"></context:component-scan>
+	<context:component-scan base-package="sts.multi.secondPro" />
+	<context:component-scan base-package="member" />
+	<context:component-scan base-package="test" />
 	
 	
 </beans:beans>
-
-
