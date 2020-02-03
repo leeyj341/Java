@@ -24,7 +24,9 @@ public class MemberVO {
 	private String phonecell;
 	private String email;
 	private String profile_photo;
-//	private String deptname;
+	private String deptname;		//부서 정
+	private String menupath;		//로그인 사용자의 메뉴페이지 정보
+	private String job_category;	//로그인 사용자의 job분류 정보
 //	MultipartFile userImage;
 
 	public MemberVO() {
@@ -67,7 +69,38 @@ public class MemberVO {
 		this.email = email;
 		this.profile_photo = profile_photo;
 	}
-
+	
+	public MemberVO(String id, String pass, String name, String ssn, String birthday, String marry, String gender,
+			String position, String duty, String classes, Date startday, Date endday, String deptno, String curstate,
+			String zipcode, String addr, String detailaddr, String phonehome, String phoneco, String phonecell,
+			String email, String profile_photo, String deptname, String menupath, String job_category) {
+		super();
+		this.id = id;
+		this.pass = pass;
+		this.name = name;
+		this.ssn = ssn;
+		this.birthday = birthday;
+		this.marry = marry;
+		this.gender = gender;
+		this.position = position;
+		this.duty = duty;
+		this.classes = classes;
+		this.startday = startday;
+		this.endday = endday;
+		this.deptno = deptno;
+		this.curstate = curstate;
+		this.zipcode = zipcode;
+		this.addr = addr;
+		this.detailaddr = detailaddr;
+		this.phonehome = phonehome;
+		this.phoneco = phoneco;
+		this.phonecell = phonecell;
+		this.email = email;
+		this.profile_photo = profile_photo;
+		this.deptname = deptname;
+		this.menupath = menupath;
+		this.job_category = job_category;
+	}
 	@Override
 	public String toString() {
 		return "MemberVO [id=" + id + ", pass=" + pass + ", name=" + name + ", ssn=" + ssn + ", birthday=" + birthday
@@ -75,7 +108,8 @@ public class MemberVO {
 				+ classes + ", startday=" + startday + ", endday=" + endday + ", deptno=" + deptno + ", curstate="
 				+ curstate + ", zipcode=" + zipcode + ", addr=" + addr + ", detailaddr=" + detailaddr + ", phonehome="
 				+ phonehome + ", phoneco=" + phoneco + ", phonecell=" + phonecell + ", email=" + email
-				+ ", profile_photo=" + profile_photo + "]";
+				+ ", profile_photo=" + profile_photo + ", deptname=" + deptname + ", menupath=" + menupath
+				+ ", job_category=" + job_category + "]";
 	}
 	
 	public String getId() {
@@ -254,6 +288,24 @@ public class MemberVO {
 
 	public void setProfile_photo(String profile_photo) {
 		this.profile_photo = profile_photo;
+	}
+	public String getDeptname() {
+		return deptname;
+	}
+	public void setDeptname(String deptname) {
+		this.deptname = deptname;
+	}
+	public String getMenupath() {
+		return menupath;
+	}
+	public void setMenupath(String menupath) {
+		this.menupath = menupath;
+	}
+	public String getJob_category() {
+		return job_category;
+	}
+	public void setJob_category(String job_category) {
+		this.job_category = job_category;
 	}
 	
 
