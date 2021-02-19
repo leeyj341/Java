@@ -6,4 +6,4 @@
 
 * [API 사용, 반복문, Exception 등 기초 Java 문법 실습](javawork/basicJava/src/)
 * [Spring DI](springwork/springdi/src/di/)
-* [mybatis 활용 spring 프로젝트](
+* [mybatis 활용 spring 프로젝트](webwork/)
